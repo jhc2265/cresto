@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRESTO | Born from the broken</title><meta name="description" content="CRESTO는 파도와 균열의 리듬에서 출발한 패턴, 오브제, 공예적 생활 소품을 선보이는 리빙 브랜드입니다."><link rel="canonical" href="index.html"><meta property="og:type" content="website"><meta property="og:title" content="CRESTO | Born from the broken"><meta property="og:description" content="CRESTO는 파도와 균열의 리듬에서 출발한 패턴, 오브제, 공예적 생활 소품을 선보이는 리빙 브랜드입니다."><meta property="og:image" content="image/hero-poster.webp"><meta property="og:url" content="index.html"><meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css?v=20260709">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16.png"><link rel="apple-touch-icon" href="image/favicon-180.png"></head>
+<body>
+
+    <!-- ── HEADER ── -->
+    <header id="header">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="image/logo.png" alt="Cresto">
+            </a>
+            <ul class="gnb">
+                <li><a href="about.html">About</a><ul class="sub"><li><a href="design-mood.html">Design Mood</a></li><li><a href="craft.html">Craft</a></li><li><a href="archive.html">Archive</a></li></ul></li>
+                <li>
+                    <a href="pattern.html">Pattern</a>
+                    <ul class="sub">
+                        <li><a href="rough-wave.html">Rough Wave</a></li>
+                        <li><a href="soft-geometry.html">Soft Geometry</a></li>
+                        <li><a href="ceramic-bloom.html">Ceramic Bloom</a></li>
+                        <li><a href="blue-archive.html">Blue Archive</a></li>
+                    </ul>
+                </li>
+                <li><a href="object.html">Object</a><ul class="sub"><li><a href="for-table.html">For Table</a></li><li><a href="for-bath.html">For Bath</a></li><li><a href="for-fabric.html">For Fabric</a></li><li><a href="for-space.html">For Space</a></li></ul></li>
+                <li><a href="contact.html">Contact</a><ul class="sub"><li><a href="collaboration.html">Collaboration</a></li><li><a href="stockist.html">Stockist</a></li><li><a href="inquiry.html">Inquiry</a></li></ul></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ── HERO SWIPER ── -->
+    <div id="hero">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="textbox">
+                        <h1>Born from the broken</h1>
+                        <h2>부서짐의 끝에서 태어나다.</h2>
+                    </div>
+                    <video autoplay muted playsinline loop preload="metadata" poster="image/hero-poster.webp">
+                        <source src="video/hero.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section quick navigation -->
+        <div class="slide-dots">
+            <button class="dot active" data-target=".section01" data-label="Wave">1</button>
+            <button class="dot" data-target=".section02" data-label="Story">2</button>
+            <button class="dot" data-target=".section03" data-label="Collection">3</button>
+        </div>
+    </div>
+
+    <!-- ── MAIN SECTIONS ── -->
+    <main>
+
+        <!-- SECTION 01 : A Rough Wave -->
+        <section class="section01">
+            <h3>A Rough Wave</h3>
+            <div class="sec01-grid">
+                <div class="sec01-main">
+                    <img src="image/generated/pages/home-main.webp" alt="CRESTO collection" loading="lazy" decoding="async">
+                </div>
+                <!-- cards rendered from HOME_PATTERNS in js/main.js (renderHomeCards) -->
+                <div class="sec01-cards"></div>
+            </div>
+        </section>
+
+        <!-- SECTION 02 : Brand Story -->
+        <section class="section02">
+            <img class="brand-ornament brand-ornament-left" src="image/sec02_bg1.png" alt="" loading="lazy" decoding="async">
+            <img class="brand-ornament brand-ornament-right" src="image/sec02_bg2.png" alt="" loading="lazy" decoding="async">
+            <div class="sec02-inner">
+                <div class="sec02-left">
+                    <h3>Brand Story</h3>
+                    <p>부서짐의 끝에서 흐름을 담다.<br>일상에 감각을 남기다, CRESTO.</p>
+                    <a href="about.html" class="view-more">view more &rsaquo;</a>
+                </div>
+                <div class="sec02-circles">
+                    <div class="circle-item">
+                        <div class="circle-img">
+                            <img src="image/sec02_1.png" alt="파도가 그린 리듬" loading="lazy" decoding="async">
+                        </div>
+                        <p>파도가 그린 리듬</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-img">
+                            <img src="image/sec02_2.png" alt="물결" loading="lazy" decoding="async">
+                        </div>
+                        <p>불완전함이 형태가 <br> 되고 가치가 됩니다.</p>
+                    </div>
+                    <div class="circle-item">
+                        <div class="circle-img">
+                            <img src="image/sec02_3.png" alt="CRESTO" loading="lazy" decoding="async">
+                        </div>
+                        <p>패턴이 시작되는 곳,<br>CRESTO</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 03 : Collection -->
+        <section class="section03">
+            <h3>Collection</h3>
+            <!-- cards rendered from HOME_COLLECTIONS in js/main.js (renderHomeCards) -->
+            <div class="sec03-grid"></div>
+        </section>
+
+    </main>
+
+    <!-- ── JOIN THE WAVE ── -->
+    <div class="join-wave">
+        <div class="join-inner">
+            <div class="join-text">
+                <h3>Join the wave</h3>
+                <p>새로운 소식과 한정 컬렉션을 가장 먼저 안내드려요.</p>
+            </div>
+            <form class="join-form" onsubmit="return false;">
+                <input type="email" placeholder="이메일을 입력해주세요">
+                <button type="submit">구독하기</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ── FOOTER ── -->
+    <footer></footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Section quick-nav dots + hero motion are handled in js/main.js (setupHomeMotion) -->
+<script src="js/main.js?v=20260709" defer></script></body>
+</html>
+
+

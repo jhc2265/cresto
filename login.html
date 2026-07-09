@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Cresto</title><meta name="description" content="CRESTO는 파도와 균열의 리듬에서 출발한 패턴, 오브제, 공예적 생활 소품을 선보이는 리빙 브랜드입니다."><link rel="canonical" href="login.html"><meta property="og:type" content="website"><meta property="og:title" content="Login | Cresto"><meta property="og:description" content="CRESTO는 파도와 균열의 리듬에서 출발한 패턴, 오브제, 공예적 생활 소품을 선보이는 리빙 브랜드입니다."><meta property="og:image" content="image/hero-poster.webp"><meta property="og:url" content="login.html"><meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css?v=20260709">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16.png"><link rel="apple-touch-icon" href="image/favicon-180.png"></head>
+<body class="subpage login-page page-login">
+
+    <header id="header">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="image/logo_2.png" alt="Cresto">
+            </a>
+            <ul class="gnb">
+                <li><a href="about.html">About</a><ul class="sub"><li><a href="design-mood.html">Design Mood</a></li><li><a href="craft.html">Craft</a></li><li><a href="archive.html">Archive</a></li></ul></li>
+                <li>
+                    <a href="pattern.html">Pattern</a>
+                    <ul class="sub">
+                        <li><a href="rough-wave.html">Rough Wave</a></li>
+                        <li><a href="soft-geometry.html">Soft Geometry</a></li>
+                        <li><a href="ceramic-bloom.html">Ceramic Bloom</a></li>
+                        <li><a href="blue-archive.html">Blue Archive</a></li>
+                    </ul>
+                </li>
+                <li><a href="object.html">Object</a><ul class="sub"><li><a href="for-table.html">For Table</a></li><li><a href="for-bath.html">For Bath</a></li><li><a href="for-fabric.html">For Fabric</a></li><li><a href="for-space.html">For Space</a></li></ul></li>
+                <li><a href="contact.html">Contact</a><ul class="sub"><li><a href="collaboration.html">Collaboration</a></li><li><a href="stockist.html">Stockist</a></li><li><a href="inquiry.html">Inquiry</a></li></ul></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sub-hero">
+            <div class="sub-hero-inner">
+                <h1>Login</h1>
+                <p class="hero-subtitle">Welcome back to CRESTO</p>
+            </div>
+        </section>
+
+        <section class="login-section">
+            <div class="login-inner login-grid">
+                <div class="login-copy">
+                    <span class="catalog-kicker">Member</span>
+                    <h3>다시, 흐름이<br>이어지는 곳으로.</h3>
+                    <p>로그인하고 위시리스트, 장바구니, 주문 내역을 한곳에서 관리해보세요.</p>
+                    <div class="gray-img wide"></div>
+                </div>
+                <div class="login-form-panel">
+                    <div class="auth-tabs">
+                        <button type="button" class="auth-tab active" data-target="login">로그인</button>
+                        <button type="button" class="auth-tab" data-target="signup">회원가입</button>
+                    </div>
+                    <form class="form-grid auth-form" data-auth-form="login" onsubmit="return false;">
+                        <label>Email<input type="email" placeholder="Email"></label>
+                        <label>Password<input type="password" placeholder="Password"></label>
+                        <div class="login-actions">
+                            <p class="auth-tip">TIP 로그인 버튼을 5번 탭하면 테스트용 계정으로 로그인할 수 있어요.</p>
+                            <a href="inquiry.html">Forgot your password?</a>
+                        </div>
+                        <button type="submit" class="login-submit">LOGIN</button>
+                        <div class="auth-social-row">
+                            <button type="button" class="auth-social">Continue with Google</button>
+                            <button type="button" class="auth-social">Continue with Apple</button>
+                        </div>
+                    </form>
+                    <form class="form-grid auth-form" data-auth-form="signup" onsubmit="return false;" hidden>
+                        <label>Name<input type="text" name="name" placeholder="이름"></label>
+                        <label>Email<input type="email" placeholder="Email"></label>
+                        <label>Password<input type="password" placeholder="Password"></label>
+                        <label>Confirm Password<input type="password" placeholder="Confirm Password"></label>
+                        <p class="auth-tip">TIP 회원가입 버튼을 5번 탭하면 테스트용 정보로 자동 입력돼요.</p>
+                        <button type="submit">SIGN UP</button>
+                        <div class="auth-social-row">
+                            <button type="button" class="auth-social">Continue with Google</button>
+                            <button type="button" class="auth-social">Continue with Apple</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+<script src="js/main.js?v=20260709" defer></script></body>
+</html>

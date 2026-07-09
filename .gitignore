@@ -1,0 +1,12 @@
+.agents/
+.claude/
+.codex/
+camp-lium/
+
+# Local verification screenshots generated during review.
+/*.png
+
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
