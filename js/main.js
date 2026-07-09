@@ -33,7 +33,8 @@
   };
 
   /* shopping cart, persisted in localStorage.
-     Seeds from DEMO_CART on first visit so the demo always has sample items.
+     Seeds from DEMO_CART for logged-in users so the demo has sample items;
+     guests start with an empty cart.
      Each line = { name, meta, price (line total), qty }. */
   var CART = {
     KEY: "cresto_cart",
@@ -41,6 +42,8 @@
       try {
         var raw = localStorage.getItem(this.KEY);
         if (raw === null) {
+          // Seed demo items only when a user is logged in; guests start empty.
+          if (!AUTH.get()) return [];
           return DEMO_CART.map(function (i) {
             return { id: i.id, name: i.name, meta: i.meta, price: i.price, qty: 1 };
           });
@@ -161,7 +164,7 @@
     {
       id: "soft-geometry-bowl", name: "Soft Geometry Bowl", kr: "소프트 지오메트리 볼",
       price: 29000, category: "table", catLabel: "Object · Tableware", tag: "Signature",
-      images: ["image/generated/products/soft-geometry-bowl-card.png", "image/generated/pages/soft-geometry-page.webp", "image/generated/tile-relief.webp", "image/generated/pages/for-table-page.webp"],
+      images: ["image/generated/products/soft-geometry-bowl-card.webp", "image/generated/pages/soft-geometry-page.webp", "image/generated/tile-relief.webp", "image/generated/pages/for-table-page.webp"],
       colors: [["Ivory", "#ece6da"], ["Ocean Blue", "#7e9cc0"], ["Sand", "#cdbfa6"]],
       sizes: ["S · Ø 13cm", "M · Ø 16cm"],
       lead: "부드러운 기하 곡선이 살아 있는 데일리 볼. 한 손에 감기는 균형감으로 매일의 식탁에 어울립니다.",
@@ -173,7 +176,7 @@
     {
       id: "ocean-mug", name: "Ocean Mug", kr: "오션 머그",
       price: 24000, category: "table", catLabel: "Object · Tableware", tag: "Daily",
-      images: ["image/generated/products/ocean-mug-card.png", "image/generated/ceramic-object.webp", "image/generated/ocean-light.webp", "image/generated/pages/for-table-page.webp"],
+      images: ["image/generated/products/ocean-mug-card.webp", "image/generated/ceramic-object.webp", "image/generated/ocean-light.webp", "image/generated/pages/for-table-page.webp"],
       colors: [["Ocean Blue", "#7e9cc0"], ["Ivory", "#ece6da"]],
       sizes: ["300ml"],
       lead: "손에 감기는 두께감의 데일리 머그. 따뜻한 음료의 온기를 오래 머금습니다.",
@@ -794,6 +797,8 @@
       if (!t) return;
       e.preventDefault();
       AUTH.clear();
+      // Clear the cart too so the demo seed / stale items don't linger for guests.
+      localStorage.removeItem(CART.KEY);
       toast("로그아웃되었어요.");
       setTimeout(function () { location.href = "index.html"; }, 600);
     });

@@ -3544,25 +3544,25 @@ footer {
 .subpage.catalog-page.page-coupon .sub-hero,
 .subpage.catalog-page.page-address .sub-hero,
 .subpage.catalog-page.page-profile .sub-hero {
-    background-image: url('../image/generated/pages/member-account-hero-bg.png');
+    background-image: url('../image/generated/pages/member-account-hero-bg.webp');
     background-size: 108% auto;
     background-position: center;
 }
 
 .subpage.catalog-page.page-orders .sub-hero {
-    background-image: linear-gradient(180deg, rgba(234,244,252,0.58), rgba(249,252,255,0.78)), url('../image/generated/pages/orders-hero-bg.png');
+    background-image: linear-gradient(180deg, rgba(234,244,252,0.58), rgba(249,252,255,0.78)), url('../image/generated/pages/orders-hero-bg.webp');
     background-size: cover;
     background-position: center;
 }
 
 .subpage.catalog-page.page-wishlist .sub-hero {
-    background-image: linear-gradient(180deg, rgba(234,244,252,0.58), rgba(249,252,255,0.78)), url('../image/generated/pages/wishlist-hero-bg.png');
+    background-image: linear-gradient(180deg, rgba(234,244,252,0.58), rgba(249,252,255,0.78)), url('../image/generated/pages/wishlist-hero-bg.webp');
     background-size: cover;
     background-position: center;
 }
 
 .subpage.catalog-page.page-cart .sub-hero {
-    background-image: linear-gradient(180deg, rgba(234,244,252,0.58), rgba(249,252,255,0.78)), url('../image/generated/pages/cart-hero-bg.png');
+    background-image: linear-gradient(180deg, rgba(234,244,252,0.58), rgba(249,252,255,0.78)), url('../image/generated/pages/cart-hero-bg.webp');
     background-size: cover;
     background-position: center;
 }
