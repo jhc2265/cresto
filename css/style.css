@@ -1493,7 +1493,6 @@ footer {
 
 .page-contact .contact-copy .gray-img { background-image: url('../image/generated/contact-bowl.webp'); }
 .page-studio-note .contact-copy .gray-img { background-image: url('../image/generated/pages/studio-note-page.webp'); }
-.page-collaboration .contact-copy .gray-img { background-image: url('../image/generated/pages/collaboration-page.webp'); }
 .page-stockist .contact-copy .gray-img { background-image: url('../image/generated/pages/stockist-page.webp'); }
 .page-inquiry .contact-copy .gray-img { background-image: url('../image/generated/pages/inquiry-page.webp'); }
 .page-login .login-copy .gray-img { background-image: url('../image/generated/pages/login-page.webp'); }
@@ -3513,12 +3512,6 @@ footer {
 
 .subpage.contact-page.page-contact .sub-hero {
     background-image: linear-gradient(180deg, rgba(234,244,252,0.58), rgba(249,252,255,0.76)), url('../image/generated/pages/contact-hero-bg.webp');
-    background-size: cover;
-    background-position: center;
-}
-
-.subpage.contact-page.page-collaboration .sub-hero {
-    background-image: linear-gradient(180deg, rgba(234,244,252,0.58), rgba(249,252,255,0.76)), url('../image/generated/pages/collaboration-hero-bg.webp');
     background-size: cover;
     background-position: center;
 }
